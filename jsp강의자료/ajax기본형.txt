@@ -1,0 +1,12 @@
+$.ajax({
+	url : "action url",
+	type : "post or get",
+	data : "{넘겨줄 데이터 key:넘겨줄 데이터 값}",
+	dataType : "(html,xml,json,text,jsonp)",
+	success : function(data){
+
+		},
+	error : function(){
+
+	}
+});

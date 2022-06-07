@@ -1,0 +1,22 @@
+maven web project 생성하기
+
+1. project->order or maven project->maven project
+  -- templete 에서 apache.maven 검색 maven-archetype-web 1.4 선택
+2. group id 입력 예)co.micol  ==회사도메인 역순
+3. artifact id 입력  예)hello  ==프로젝트 명
+4. version 및 packing 정보확인 ==war  <finsh>
+
+==arifact id로 프로젝트가 생성됨
+구조변경
+1. web.xml 변경  ==>원하는 servlet version으로(3.1)
+   dtd 찾아서 변경한다.<web-app   >  ~~~ </web-app>
+2. 필요하다면 <wellcomfile>을 선언한다.  index.jsp
+3. 자동으로 생성된 index.jsp을 삭제
+  3.1 WEB-INF에 lib 폴더 생성
+  3.2 src/main/java
+      src/main/resources
+      src/test/java
+      src/test/resources  없으면 폴더를 생성해준다.
+4. pom.xml 에서 servlet 라이브러리 추가(web.xml에서 설정한 version)
+    <propeties>에 compiler version 수정(자바 버전에 맞춰서)
+5. project명에서 마우스 우측버튼 클릭 -> maven -> update project 실행
