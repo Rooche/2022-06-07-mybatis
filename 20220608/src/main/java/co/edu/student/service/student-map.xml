@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="co.edu.student.service.StudentMapper">
+<!--service.student-map이였지만 StudentMapper로 바꿈-->
+<!--select나 insert안에 들어가는 id는 studentmapper에서 들고왔고 resultType-->
+	<select id="studentSelectList" resultType="co.edu.student.vo.StudentVO">
+		SELECT * FROM STUDENT
+	</select>
+	
+	<select id="studentSelect">
+	
+	</select>
+
+
+	<insert id="studentInsert">
+	
+	</insert>
+	
+	<update id="studentUpdate">
+	
+	</update>
+
+	<delete id="studentDelete">
+	
+	</delete>
+
+
+</mapper>
